@@ -1,0 +1,351 @@
+/* Cabeçalho*/
+header {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos ao longo do eixo principal (horizontal) */
+  align-items: center; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b1b1b85;
+  box-shadow: 0 3px 8px rgb(251, 255, 0);
+  padding: 1px;
+  z-index: 100;
+}
+
+.Slogan {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  color: rgb(248, 223, 0);
+  font-family: cursive;
+}
+
+.Cabecalho {
+  width: 20%;
+  max-width: 45%;
+  height: 100%;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+/* Looping de marcas */
+nav {
+  background-color: rgba(61, 61, 61, 0.356);
+}
+
+.logo-carousel {
+  width: 100%;
+  overflow: hidden;
+  justify-content: start;
+  order: 1 ;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+      }
+100% {
+  transform: translateX(calc(-100px * 4));
+  }
+}
+
+.logo-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  list-style: none;
+  padding: 0;
+  animation: slide 8s linear infinite; /* Velocidade das imagens*/
+
+}
+
+.logo-item {
+  width: 8%; /* Tamanho das imagens ao rolar*/
+  max-width: 10%;
+  height: 80%;
+  flex-shrink: 0;
+  margin-top: 90px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  
+}
+
+/* Corpo do site e imagem de fundo*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-image: url('./Imagens/BCKGRD.png');
+  background-size: cover; /* Faz a imagem cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem no fundo */
+  background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+  backdrop-filter: blur(18px);
+
+}
+
+main {
+  display: flex;
+  margin: 0;
+  background-color: rgba(61, 61, 61, 0.356);
+}
+
+.motos-sequenc {
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  margin: 0;
+  font-size: 0;
+  width: 80%;
+  max-width: 100%;
+}
+
+.item-moto {
+flex-grow: 1;
+flex-basis: 5%;
+height: auto;
+}
+
+.item-moto img[src="./Imagens/TRABALHOS/2titan.png"]{
+  width: 86%;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+
+}
+
+.TRABALHOS  .titulo {
+  color: black;
+  line-height: 1.5;
+  -webkit-text-stroke: 1px rgb(247, 243, 0); /* Adiciona a borda branca */
+}
+.TRABALHOS p{
+color: white;
+font-weight: bold;
+font-size: 25px;
+}
+
+.informacao {
+  padding: 20px;
+  width:auto;
+  justify-content:space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 120px;
+  font-family: Comic Sans MS;
+}
+
+.Conteudo p {
+  font-size: 19px;
+  line-height: 1.5;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis:auto;
+ font-weight: bold;
+}
+
+.links a {
+  color: #0074e4;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.TRABALHOS .links img {
+  max-width: 40px;
+  margin-left: 120px;
+}
+
+.Duvidas img {
+  max-width: 25%;
+  height: auto;
+  margin-left: 0;
+  flex-wrap: wrap;
+}
+
+.Duvidas .links img {
+  max-width: 150px;
+  margin-left: 40px;
+}
+
+.Duvidas {
+  display: flex;
+  background-color:#fbff00a1;
+}
+
+.CONTATOS {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+.CONTATOS .titulo {
+  margin-top: 30px;
+  -webkit-text-stroke: 1px rgb(247, 243, 0);
+}
+
+.Endereco {
+  margin-left: 32px;
+  text-align: center;
+}
+
+.Telefone {
+  margin-right: 40px;
+  text-align: center;
+}
+
+.Telefone t {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+.links img {
+  max-width: 30px;
+  margin-left: 80px;
+}
+
+.Telefone img {
+  display: flex;
+  max-width: 40px;
+  height: auto;
+  margin-left: 150px;
+  filter:drop-shadow(0px 0px 10px #2bff00)
+}
+.Endereco .links img{
+  margin-left: 0;
+  filter:drop-shadow(0px 0px 10px #ff0000)
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 0, 0.719);
+  padding: 1px;
+  z-index: 1;
+}
+  .Direitos {
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .sobre {
+    text-align: center;
+  }
+
+  .Cartao img {
+    width: 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  .desenvolvido {
+    margin: 30px;
+    width: 200px;
+  }
+
+/* Ajustes para celulares*/
+@media screen and (max-width: 768px) {
+
+  .logo-wrapper {
+    gap: 10px; /* Reduzi o espaço entre as imagens para telas menores */
+  }
+
+  .logo-item {
+    width: 90px;
+    margin-top: 120px;
+    height: 30px; /* Ajuste conforme necessário para telas menores */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Muda para layout de coluna em telas menores */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .Cabecalho {
+   width: 50%;
+  }
+  .Slogan {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  /* Exemplo: Redefina a largura máxima para o conteúdo ficar mais centralizado */
+  main, .motos-sequenc, article, section, footer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.motos-sequenc {
+  display: grid;
+}
+.titulo {
+  margin-top: 0;
+  display: flex;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    section, .Endereco, .informacao {
+      line-height: normal;
+      margin-left: 0;
+      margin-top: 0;
+    }
+    section, .informacao .titulo {
+      margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section, .Telefone, .informacao {
+      line-height: 1.0;
+      margin-right: 0;
+    }
+    .Telefone {
+      justify-content: center;
+      margin: 0px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: start;
+ font-size: 10px;
+  }
+}
